@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: row;
     width: 300px;
+    flex: 1;
 
 }
 
@@ -42,10 +43,10 @@
 
 .userSide{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     float: right;
     color: #ffff;
-    
+    text-align: right;
 }
 .header_searchIcon{
 
@@ -55,8 +56,10 @@
     border-bottom-right-radius: 20%;
 
 }
-.userName{
 
-    float: right;
-
+.user_PersonIcon{
+    margin:0px 10px 0px 10px;
+}
+.ShoppingCartIcon_class{
+    margin:0px 10px 0px 0px;
 }

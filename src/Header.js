@@ -1,5 +1,7 @@
 import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
+import PersonIcon from '@mui/icons-material/Person';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 function Header() {
     return (
         <div className='header'>
@@ -11,10 +13,12 @@ function Header() {
                 <SearchIcon className="header_searchIcon" />
             </div>
             <div className='userSide'>
-                <img className='userImg' src=''/>
-                <p className='welcomMessege'>مرحبا</p>
-                <p className='userName'>ابراهيم محمود</p>
+                <p className='welcomMessege'> مرحبا <span className='userName'> ابراهيم محمود </span></p>
+                <PersonIcon className="user_PersonIcon" />
+                <ShoppingCartIcon className='ShoppingCartIcon_class'/>
             </div>
+           
+
         </div>
     )
 }
