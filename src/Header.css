@@ -1,0 +1,62 @@
+.red_op{
+    color: red;
+    
+}
+
+.header_logo{
+    color: #ffff;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+
+}
+
+.search_box{
+
+
+    width: 75%;
+}
+
+.searchButton{
+
+    width: 20%;
+   
+}
+
+.header{
+    font-family: raleway ;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    display: flex;
+    position: sticky;
+    width: 100%;
+    z-index: 0;
+   
+}
+
+.userSide{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    color: #ffff;
+    
+}
+.header_searchIcon{
+
+    color: #ffff;
+    background-color: red;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+
+}
+.userName{
+
+    float: right;
+
+}
