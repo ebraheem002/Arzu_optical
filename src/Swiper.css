@@ -1,4 +1,42 @@
-.myswiper{
-    height: 100px;
+.swiper{
+    height: 50px;
     width: 100%;
+    background-color: orange;
 }
+.mySwiper{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    padding: 0%;
+
+    
+}
+.listanchr{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding : 0px 15px
+}
+
+.listitem{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+}
+
+.swipList{
+    margin-left: 2%;
+    height: auto;
+    width: auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+
+}
+

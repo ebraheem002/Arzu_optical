@@ -5,9 +5,26 @@ function Swiper() {
     return (
 <div className='swiper'>
         
-        <div className='mySwiper'>
-            
-        </div>
+        <ul className='mySwiper'>
+            <div className='swipList'>
+                <li className='listitem'><a className='listanchr' href='#'>رجالي</a></li>
+            </div>
+            <div className='swipList'>
+                <li className='listitem'><a className='listanchr' href='#'>نسائي</a></li>
+            </div>
+            <div className='swipList'>
+                <li className='listitem'><a className='listanchr' href='#'>اطفال</a></li>
+            </div>
+            <div className='swipList'>
+                <li className='listitem'><a className='listanchr' href='#'>منظفات</a></li>
+            </div>
+            <div className='swipList'>
+                <li className='listitem'><a className='listanchr' href='#'>اكسسوارات</a></li>
+            </div>
+            <div className='swipList'>
+                <li className='listitem'><a className='listanchr' href='#'>عدسات</a></li>
+            </div>
+        </ul>
             
 </div>
     );

@@ -1,7 +1,8 @@
 import Header from './Header.js';
+import Swiper from './Swiper.js';
+
 import './App.css';
 import './Header.css';
-import Swiper from './Swiper.js';
 import './Swiper.css';
 
 function App() {
