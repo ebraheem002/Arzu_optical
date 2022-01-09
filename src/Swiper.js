@@ -1,12 +1,11 @@
 import React from 'react';
 import './Swiper.css'
-
 function Swiper() {
     return (
 <div className='swiper'>
         
         <ul className='mySwiper'>
-            <div className='swipList'>
+            <div className='swipList '>
                 <li className='listitem'><a className='listanchr' href='#'>رجالي</a></li>
             </div>
             <div className='swipList'>
