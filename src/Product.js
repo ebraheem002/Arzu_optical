@@ -5,7 +5,7 @@ function Product(){
     <div className='Product'>
         <div className='product_item'>
             <p>this is a sunglass</p>
-            <strong>99.99$</strong>
+            <strong className='prod_price'>99.99$</strong>
         </div>
         <img src='https://picsum.photos/200'/>
     </div>
