@@ -1,19 +1,21 @@
 import React from 'react';
+import Product from './Product.js';
 function Home (){
     return(
 
         <div className='home_container'>
             <div className='home_row'>
-                {myProduct}
+                <Product/>
+                <Product/>
             </div>
             <div className='home_row'>
-                {myProduct}
-                {myProduct}
-                {myProduct}
+            <Product/>
+            <Product/>
+            <Product/>
             </div>
             <div className='home_row'>
-                {myProduct}
-                {myProduct}
+            <Product/>
+            <Product/>
             </div>
             
         </div>
