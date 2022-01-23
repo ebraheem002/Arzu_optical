@@ -7,16 +7,18 @@ function Home (){
         <div className='home_container'>
             <div className='home_row'>
                 <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
-                <Product/>
+                <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
             </div>
             <div className='home_row'>
-            <Product/>
-            <Product/>
-            <Product/>
+            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+
             </div>
             <div className='home_row'>
-            <Product/>
-            <Product/>
+            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+
             </div>
             
         </div>
