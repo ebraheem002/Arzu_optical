@@ -1,0 +1,11 @@
+.Product{
+    display: flex;
+    flex-direction: column;
+}
+
+.Product > img{
+    max-width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
