@@ -4,10 +4,10 @@ function Product({title, image, price}){
     return(
     <div className='Product'>
         <div className='product_item'>
-            <p>this is a sunglass</p>
-            <strong className='prod_price'>99.99$</strong>
+            <p>{title}</p>
+            <strong className='prod_price'>{price} دينار</strong>
         </div>
-        <img src='https://picsum.photos/200'/>
+        <img src={image}/>
         <button>اضافة الى عربة التسوق</button>
     </div>
     )
