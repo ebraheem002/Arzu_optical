@@ -8,7 +8,7 @@ function Product(){
             <strong className='prod_price'>99.99$</strong>
         </div>
         <img src='https://picsum.photos/200'/>
-        <button>اضافة الى السلة</button>
+        <button>اضافة الى عربة التسوق</button>
     </div>
     )
 }
