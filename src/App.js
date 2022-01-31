@@ -7,8 +7,6 @@ import './Header.css';
 import './Swiper.css';
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
-
-
 function App() {
   return (
     <Router>
@@ -16,7 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<><Header/><Swiper/><Home/></>}>
         </Route>
+        <Route path="/productPage" element={<><Header/><Swiper/><Home/></>}>
+        </Route>
       </Routes>
+      
     </div>
     </Router>
   );
