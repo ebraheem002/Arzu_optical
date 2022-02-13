@@ -6,18 +6,18 @@ function Home (){
         <div className='home'>
         <div className='home_container'>
             <div className='home_row'>
-                <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
-                <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+                <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
+                <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
             </div>
             <div className='home_row'>
-            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
 
             </div>
             <div className='home_row'>
-            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة جاهز بلوكت' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
+            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
 
             </div>
             
