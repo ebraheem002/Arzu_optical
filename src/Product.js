@@ -8,6 +8,8 @@ function Product({title, image, price}){
             <p>{title}</p>
             <strong className='prod_price'>{price} دينار</strong>
         </div>
+        <button>شراء ألان</button>
+
         
     </div>
     )

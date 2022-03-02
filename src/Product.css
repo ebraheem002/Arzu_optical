@@ -3,13 +3,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin: 30px;
+    margin: 1%;
     padding: 20px;
     width: 100%;
     background-color: white;
     max-height: 400px;
     min-width: 100px;
     z-index: 1;
+    border: 1px #ededed solid;
 }
 
 .Product > img{
@@ -28,15 +29,14 @@
     height: 100px;
     width: 100%;
     margin-bottom: 15px;
-    text-align: right;
+    text-align: center;
 }
 
 .Product > button {
     height: 30px;
-    width: 100%;
-    background-color:#192CE6;
-    border-radius: 20px;
-    border:1px none;
-    color: white;
+    width: 50%;
+    background-color:white ;
+    border:1px  solid;
     font-size: 14px;
+    cursor: pointer;
 }
