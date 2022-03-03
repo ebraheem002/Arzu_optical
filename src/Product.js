@@ -3,6 +3,7 @@ import './Product.css';
 function Product({title, image, price}){
     return(
     <div className='Product'>
+        
         <img src={image}/>
         <div className='product_item'>
             <p>{title}</p>
