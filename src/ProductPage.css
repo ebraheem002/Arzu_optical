@@ -1,59 +1,147 @@
-.productContainer{
+.producut-page-container{
     display: flex;
 }
-.product-images{
-    flex: 0 0 50%;
+
+.slide-grid{
+    min-width: 40px;
+    min-height: 40px;
 }
-.product-images-side{
-    margin: 2%;
+
+.slide-grid > ul{
+    list-style: none;
+}
+
+.each-li{
+    width: 5%;
+    height: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.image-wrapper{
     display: flex;
+    word-wrap: break-word;
+   
+   
+}
+
+.each-img{
+    width: 50px;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 3px;
+   
+}
+
+.each-img:hover{
+    border: 2px solid rgb(235, 176, 14);
+    box-shadow: 0 0 3px 2px rgb(98, 97, 97);
+}
+
+.side-product-page{
+   
+    padding: 2% ;
+    flex: 1 1 25%;
+
+}
+
+.product-title{
+    font-size: 1.5rem!important;
+    line-height: 32px!important;
+}
+
+.text-wrapper{
     float: right;
+}
 
+.text-wrapper > h1{
+    text-align: right;
+}
+
+.text-wrapper > tr {
+    float: right;
+}
+
+.big-imag{
+    float: right;
+}
+
+.grid-img{
+    float: right;
+    margin-right: 20%;
 }
 
 
 
-.mainProdctImg{
-    max-width: 100%;
-    max-height:100%;
-    
-    border-radius: 5px;
-}
-
-.product-images-swiper{
-    width: 80px;
-    position: relative;
-    height: 460px;
-    margin-left: 2%;
-}
-
-.slideimg{
-    margin-top: 1%;
-    border: 2px solid rgb(235, 236, 240);
-    border-radius: 5px;
-    width: 84px;
-    height: 104px;
-
-}
-
-.eachImg{
-    width: 100%;
-    max-width: unset;
-    height: 100%;
-    max-height: unset;
-}
-.product-info{
-    
-    margin: 2%;
-}
-
-.prod-colors{
+.add-cart-button{
     display: flex;
+    flex-direction: column;
+    margin-top: 8%;
 }
 
-.each-color{
-    height: 30px;
-    width: 100px;
-    background-color: blue;
-    margin-right: 1%;
+.add-cart-button > input{
+    width: 80%;
+    margin-top: 3%;
+}
+.add-done{
+    background-color: #fcff3b;
+    border-radius: 20px;
+    border: none;
+}
+
+hr{
+    margin-top: 3%;
+}
+
+.price-in-number{
+    font-size: 0.875rem!important;
+    line-height: 20px!important;
+    color: #565959!important;
+}
+
+.product-page-price, .IQD{
+    font-size: 1rem!important;
+    line-height: 24px!important;
+    color: #B12704!important;
+    font-weight: 400;
+}
+
+.the-number{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.number-word{
+    display: inline;
+    color: #555;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 3%;
+}
+
+.the-props{
+    float: right;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.prop-word{
+  
+    display: inline;
+    color: #555;
+    font-weight: 400;
+    float: right;
+    text-align: right;
+}
+
+.props-list{
+    margin-top: 2%;
+}
+
+.each-prop{
+    font-size: 14px;
+    line-height: 20px;
 }
