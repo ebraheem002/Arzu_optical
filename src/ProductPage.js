@@ -1,7 +1,7 @@
 import React from "react";
 function ProductPage(){
     return(
-        
+        <div className="product-paged-rows">
         <div className="producut-page-container" >
             <div className="side-product-page">
             <div className="add-cart-button flexabilti-purch">
@@ -101,7 +101,41 @@ function ProductPage(){
             
             
         </div>
-        
+        <div className="related-items">
+            <div className="related-list">
+                <ul>
+                    <li className="related-item">
+                        <a href="#">
+                        <img src="https://picsum.photos/200"/>
+                        <p>نظارة lacost شمسية بولورايزد</p>
+                        <strong>2500 IQD</strong>
+                        </a>
+                    </li>
+                    <li className="related-item">
+                        <a href="#">
+                        <img src="https://picsum.photos/200"/>
+                        <p>نظارة lacost شمسية بولورايزد</p>
+                        <strong>2500 IQD</strong>
+                        </a>
+                    </li>
+                    <li className="related-item">
+                        <a href="#">
+                        <img src="https://picsum.photos/200"/>
+                        <p>نظارة lacost شمسية بولورايزد</p>
+                        <strong>2500 IQD</strong>
+                        </a>
+                    </li>
+                    <li className="related-item">
+                        <a href="#">
+                        <img src="https://picsum.photos/200"/>
+                        <p>نظارة lacost شمسية بولورايزد</p>
+                        <strong>2500 IQD</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
     )
 }
 
