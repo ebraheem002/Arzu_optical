@@ -3,6 +3,7 @@ import Header from './Header.js';
 import Swiper from './Swiper.js';
 import Home from './Home.js';
 import ProductPage from './ProductPage'
+import Checkout from './Checkout'
 import './App.css';
 import './Header.css';
 import './Swiper.css';
@@ -18,7 +19,8 @@ function App() {
         </Route>
         <Route path="/productPage" element={<><Header/><Swiper/><ProductPage/></>}>
         </Route>
-        
+        <Route path="/checkout" element={<><Header/><Swiper/><Checkout/></>}>
+        </Route>
       </Routes>
       
     </div>
