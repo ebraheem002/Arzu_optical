@@ -8,6 +8,7 @@ import './App.css';
 import './Header.css';
 import './Swiper.css';
 import './ProductPage.css'
+import './Checkout.css'
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 function App() {

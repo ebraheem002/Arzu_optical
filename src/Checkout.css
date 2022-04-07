@@ -1,0 +1,48 @@
+.checkout{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.BillBg{
+    height: 100px;
+    background-color: #000;
+}
+
+.contact_info{
+    margin-top: 1%;
+    color: #fff;
+    text-align: center;
+}
+
+.Product-check{
+    margin-top: 5%;
+}
+
+.Ul-check{
+    list-style: none;
+    padding: 0;
+    margin: 7% 0 5% 0;
+}
+
+.arzu_logo {
+    text-align: center;}
+
+.ch_button{
+    text-align: center;
+}
+.ch_button > input{
+width: 40%;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.ch_button > input:hover{
+    background-color: #000;
+    color: #fff;
+
+}
