@@ -2,12 +2,11 @@ import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ArzuLogo from './ArzuLogo';
 function Header() {
     return (
         <div className='header'>
-            <div className='header_logo'>
-                <h3 className='arzu_logo'>Arzu <span className='red_op'>optical</span></h3>
-            </div>
+           <ArzuLogo red='Arzu ' black='optical' />
             <div className='searchbar'>
                 <input type='text' className='search_box' />
                 <SearchIcon className="header_searchIcon" />
