@@ -15,16 +15,15 @@
     color: #fff;
     text-align: center;
 }
-
+.checkout-left{
+    width: 21cm;
+}
 .Product-check{
+    height: 29.7cm;
     margin-top: 5%;
 }
 
-.Ul-check{
-    list-style: none;
-    padding: 0;
-    margin: 7% 0 5% 0;
-}
+
 
 .arzu_logo {
     text-align: center;}
@@ -45,4 +44,14 @@ width: 40%;
     background-color: #000;
     color: #fff;
 
+}
+
+hr{
+    margin-bottom: 2%;
+    color: #000;
+}
+
+.Product-check>table{
+    width: 100%;
+    text-align: justify;
 }

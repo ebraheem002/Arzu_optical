@@ -17,16 +17,26 @@ function Checkout (){
                         <p> العنوان:<span> الجامعة</span> </p>
                     </div>
                     <hr></hr>
-                    <ul className="Ul-check">
-                        <li className="li-check">
-                            <a>
-                            <span className='title-check'> نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم 
-
-                            </span>
-                            <strong className='price'>2500 IQD</strong>
-                            </a>
-                        </li>
-                    </ul>
+                    <table>
+                        <tr>
+                            <th>اسم المادة</th>
+                            <th>السعر</th>
+                        </tr>
+                        <tr>
+                            <td>نظارة شمسية lacoste بولورايزد</td>
+                            <td>5000 <span>IQD</span></td>
+                        </tr>
+                        <tr>
+                        <td>نظارة شمسية lacoste بولورايزد</td>
+                            <td>5000 <span>IQD</span></td>
+                        </tr>
+                        </table>
+                    <hr></hr>
+                    <div className='theSum'>
+                        <h4>المجموع : </h4>
+                        <strong>52000 <span>IQD</span></strong>
+                    </div>
+                    <hr></hr>
                     <div className='ch_button'>
                         <input value='تأكيد الشراء' type='button' />
                     </div>
