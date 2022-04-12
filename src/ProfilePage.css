@@ -1,0 +1,33 @@
+.ProfleContainer{
+    display: flex;   
+    justify-content: space-evenly;
+    margin: 3%;
+}
+
+
+
+.Right-p-side{
+    text-align: center;
+    border: 1px #ededed solid;
+    padding: 2%;
+}
+
+.The-profile-pic{
+    margin-bottom: 1%;
+}
+
+
+
+.infoDiv {
+    margin-bottom: 2%;
+}
+.infoDiv >span{
+    color: #393939;
+}
+
+
+.profileName > span{
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
