@@ -3,9 +3,10 @@ import {React, useEffect} from 'react';
 import Header from './Header.js';
 import Swiper from './Swiper.js';
 import Home from './Home.js';
-import ProductPage from './ProductPage'
-import Checkout from './Checkout'
-import ProfilePage from './ProfilePage'
+import ProductPage from './ProductPage';
+import Checkout from './Checkout';
+import ProfilePage from './ProfilePage';
+import { CartProvider } from './CartContext';
 import './App.css';
 import './Header.css';
 import './Swiper.css';
@@ -20,6 +21,7 @@ function App() {
  
   return (
     <div className="App">
+      <CartProvider>
       <BrowserRouter>
       <Header />
       <Swiper />
@@ -30,6 +32,7 @@ function App() {
         <Route path='/ProfilePage' element={<ProfilePage/>} />
       </Routes>
       </BrowserRouter>
+      </CartProvider>
     </div>
   );
 }

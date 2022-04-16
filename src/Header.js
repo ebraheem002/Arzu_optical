@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import CartContext from './CartContext';
 import ArzuLogo from './ArzuLogo';
 import { Link } from 'react-router-dom';
 function Header() {
+    const { item } = useContext(cartContext);
+    console.log(item);
     return (
         <div className='header'>
             <Link to='/'><ArzuLogo red='Arzu ' black='optical' /></Link>
@@ -19,6 +22,8 @@ function Header() {
                 <Link to='/Checkout'>
                 <ShoppingCartIcon className='ShoppingCartIcon_class'/>
                 </Link>
+                <span>0</span>
+
             </div>
            
 
