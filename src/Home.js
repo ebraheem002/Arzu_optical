@@ -1,23 +1,40 @@
-import React from 'react';
+import {React, useEffect, useState} from 'react';
 import Product from './Product.js';
 import './Home.css';
 function Home (){
+    const [productsData, setProductsData] = useState([]);
+    const [isLoading, setLoading] = useState(true)
+        useEffect(() => {
+        // GET request using fetch inside useEffect React hook
+        fetch('https://fakestoreapi.com/products')
+        .then(res=>res.json())
+        .then(json=>setProductsData(json))
+      
+      // empty dependency array means this effect will only run once (like componentDidMount in classes)
+      }, []);
+
+      useEffect(() => {
+          if(productsData.length !==0){
+              setLoading(false);
+              console.log(productsData);
+          }
+      }, [productsData])
     return(
         <div className='home'>
         <div className='home_container'>
             
             
             <div className='home_row'>
-                
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
-            <Product title='نظارة شمسية وايفيرر كلاسيكية - مقاس العدسة: 54 مم' image='https://picsum.photos/200' price={1500} />
+                {isLoading ? (
+                    <h1>Loading ....</h1>
+                ): (
+                    productsData.map((myData) =>(
+                        <Product title={myData.title} image={myData.image} price={myData.price} />
+        
+                    ))
+                )}
+            
+            
 
             </div>
             
