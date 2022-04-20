@@ -6,7 +6,7 @@ import CartContext from './CartContext';
 import ArzuLogo from './ArzuLogo';
 import { Link } from 'react-router-dom';
 function Header() {
-    const { item } = useContext(cartContext);
+    const { item } = useContext(CartContext);
     console.log(item);
     return (
         <div className='header'>
@@ -22,7 +22,7 @@ function Header() {
                 <Link to='/Checkout'>
                 <ShoppingCartIcon className='ShoppingCartIcon_class'/>
                 </Link>
-                <span>0</span>
+                <span>{item.length}</span>
 
             </div>
            

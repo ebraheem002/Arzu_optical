@@ -1,6 +1,11 @@
-import React from 'react';
+import { ListItemSecondaryAction } from '@mui/material';
+import {React, useContext} from 'react';
 import ArzuLogo from './ArzuLogo';
+import CartContext from './CartContext';
+
 function Checkout (){
+    const {item} = useContext(CartContext);
+
     return(
         <div  dir="rtl" className="checkout">
             <div className="checkout-left">
@@ -22,14 +27,15 @@ function Checkout (){
                             <th>اسم المادة</th>
                             <th>السعر</th>
                         </tr>
-                        <tr>
-                            <td>نظارة شمسية lacoste بولورايزد</td>
+                        {item.map((items) =>(
+                            <tr>
+                            <td>{items.title}</td>
                             <td>5000 <span>IQD</span></td>
                         </tr>
-                        <tr>
-                        <td>نظارة شمسية lacoste بولورايزد</td>
-                            <td>5000 <span>IQD</span></td>
-                        </tr>
+                        
+
+                        ))}
+                        
                         </table>
                     <hr></hr>
                     <div className='theSum'>

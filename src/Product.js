@@ -1,7 +1,9 @@
 import React from 'react'
+import { useContext } from 'react';
+import  CartContext  from './CartContext';
 import './Product.css';
 function Product({title, image, price}){
-    
+    const { addToCart } = useContext(CartContext);
     return(
     <div className='Product'>
         
@@ -10,7 +12,7 @@ function Product({title, image, price}){
             <p>{title}</p>
             <strong className='prod_price'>{price} دينار</strong>
         </div>
-        <button>شراء ألان</button>
+        <button>اضغط للعرض</button>
 
         
     </div>

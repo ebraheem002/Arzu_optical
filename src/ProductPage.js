@@ -1,11 +1,14 @@
-import React from "react";
-function ProductPage(){
+import React, { useContext } from "react";
+import CartContext from "./CartContext";
+function ProductPage({title, image, price}){
+    const { addToCart } = useContext(CartContext);
+    const {item} = useContext(CartContext);
     return(
         <div className="product-paged-rows">
         <div className="producut-page-container" >
             <div className="side-product-page">
             <div className="add-cart-button flexabilti-purch">
-                    <input type="submit" className="add-done" value="اضافة للسلة" />
+                    <input  onClick={() => addToCart(title, price)} type="submit" className="add-done" value="اضافة للسلة" />
                     <input type="submit" className="save-item" value="خزن العنصر" />    
                 </div>
             </div>
