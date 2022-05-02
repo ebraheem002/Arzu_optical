@@ -14,7 +14,7 @@
     border: 1px #ededed solid;
 }
 
-.Product > img{
+.product-img{
     max-height: 200px;
     width: 100%;
     object-fit: contain;
@@ -33,7 +33,7 @@
     text-align: center;
 }
 
-.Product > button {
+.product-button {
     height: 30px;
     width: 50%;
     background-color:white ;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.Product > button:hover{
+.product-button:hover{
     background-color: black;
     color: white;
 }
