@@ -1,27 +1,56 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import  {collection,onSnapshot, where, query }  from 'firebase/firestore';
+import db from './firebase.js';
+import { useParams } from "react-router-dom";
 import CartContext from "./CartContext";
-function ProductPage({title, image, price}){
+function ProductPage(){
     const { addToCart } = useContext(CartContext);
-    const {item} = useContext(CartContext);
+    const { addqQuantity } = useContext(CartContext);
+    const { id } = useParams();
+    var strIdToNum =  JSON.parse(id)
+    const [loading,setLoading] = useState(true)
+    const [quaqn,seqtQuan] = useState([]);
+   
+          
+      useEffect(() =>{
+       
+        const citiesRef = collection(db,"arzu-product");
+
+        const q =onSnapshot(query(citiesRef, where("id", "==", strIdToNum)),(snapshot) =>
+        seqtQuan(snapshot.docs.map((d)=> d.data())),
+        console.log(quaqn[0])
+        
+        )
+
+          },[])
+          useEffect(() => {
+            if(quaqn.length !==0){
+                setLoading(false);
+                console.log(quaqn[0]);
+            }
+        }, [quaqn])
+
+
+
     return(
-        <div className="product-paged-rows">
+        <div   className="product-paged-rows">
         <div className="producut-page-container" >
             <div className="side-product-page">
             <div className="add-cart-button flexabilti-purch">
-                    <input  onClick={() => addToCart(title, price)} type="submit" className="add-done" value="اضافة للسلة" />
+            <input  onClick={() => addToCart(quaqn[0].title,quaqn[0].price,quaqn[0].id)} type="submit" className="add-done" value="اضافة للسلة" />
                     <input type="submit" className="save-item" value="خزن العنصر" />    
                 </div>
             </div>
-            <div className="side-product-page">
+            <div  className="side-product-page">
             
                 <div className="purch-wrapper">
                 <div className="text-wrapper flexabilti-purch">
-                <h1 className="product-title">نظارة lacost شمسية بولورايزد</h1>
+                <h1  className="product-title">{! loading? quaqn[0].title :"loading"}</h1>
                 <hr></hr>
                 <tr>
                     <td>
                         <span className="IQD"> IQD</span>
-                        <span className="product-page-price"> 3000 :</span>
+                        <span className="product-page-price"> {! loading? quaqn[0].price :"loading"}</span>
                     </td>
                     <td>
                         <span className="price-in-number">السعر</span>
@@ -33,7 +62,7 @@ function ProductPage({title, image, price}){
                 </div>
                 <div className="the-number">
                     <span className="number-word">العدد</span>
-                    <input dir="rtl" min="0" placeholder="أدخل العدد هنا" className="number-filled" type="number" />
+                    <input onChange={addqQuantity} dir="rtl" min="0" placeholder="أدخل العدد هنا" className="number-filled" type="number" />
                 </div>
                 <div className="the-props">
                     <span className="prop-word">الخصائص</span>
@@ -47,7 +76,7 @@ function ProductPage({title, image, price}){
             </div>
             <div className="side-product-page">
                 <div className="big-image-wrapper">
-                    <img className="big-imag" src="https://picsum.photos/300/500" />
+                    <img className="big-imag" src={! loading? quaqn[0].image :"loading"}  />
                 </div>
             </div>
             <div className="side-product-page">
@@ -58,7 +87,7 @@ function ProductPage({title, image, price}){
                                 <span className="a-declartion">
                                 
                                     <div className="image-wrapper">
-                                        <img  className="each-img" src="https://picsum.photos/200/300"/>
+                                        <img  className="each-img" src={! loading? quaqn[0].image :"loading"} />
                                         
                                     </div>
                                     
@@ -68,32 +97,28 @@ function ProductPage({title, image, price}){
                             <li className="each-li">
                                 <span className="a-declartion">
                                     <div className="image-wrapper">
-                                        <img className="each-img" src="https://picsum.photos/200
-"/>
+                                        <img className="each-img"src={! loading? quaqn[0].image :"loading"} />
                                     </div>
                                 </span>
                             </li>
                             <li className="each-li">
                                 <span className="a-declartion">
                                     <div className="image-wrapper">
-                                        <img className="each-img" src="https://picsum.photos/200
-"/>
+                                        <img className="each-img" src={! loading? quaqn[0].image :"loading"} />
                                     </div>
                                 </span>
                             </li>
                             <li className="each-li">
                                 <span className="a-declartion">
                                     <div className="image-wrapper">
-                                        <img className="each-img" src="https://picsum.photos/200
-"/>
+                                        <img className="each-img" src={! loading? quaqn[0].image :"loading"}/>
                                     </div>
                                 </span>
                             </li>
                             <li className="each-li">
                                 <span className="a-declartion">
                                     <div className="image-wrapper">
-                                        <img className="each-img" src="https://picsum.photos/200
-"/>
+                                        <img className="each-img" src={! loading? quaqn[0].image :"loading"} />
                                     </div>
                                 </span>
                             </li>
@@ -139,7 +164,9 @@ function ProductPage({title, image, price}){
             </div>
         </div>
         </div>
+        
     )
+  
 }
 
 export default ProductPage
