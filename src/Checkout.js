@@ -1,10 +1,11 @@
-import { ListItemSecondaryAction } from '@mui/material';
-import {React, useContext} from 'react';
+import React from 'react';
+import { useContext} from 'react';
 import ArzuLogo from './ArzuLogo';
 import CartContext from './CartContext';
 
 function Checkout (){
-    const {item} = useContext(CartContext);
+    const {checkItem} = useContext(CartContext);
+    console.log(checkItem)
 
     return(
         <div  dir="rtl" className="checkout">
@@ -26,11 +27,13 @@ function Checkout (){
                         <tr>
                             <th>اسم المادة</th>
                             <th>السعر</th>
+                            <th>الكمية</th>
                         </tr>
-                        {item.map((items) =>(
-                            <tr>
+                        {checkItem.map((items) =>(
+                            <tr >
                             <td>{items.title}</td>
-                            <td>5000 <span>IQD</span></td>
+                            <td>{items.price} <span>IQD</span></td>
+                            <td>{items.quan} <span>قطع</span></td>
                         </tr>
                         
 
