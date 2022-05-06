@@ -1,4 +1,5 @@
-import {React, useEffect} from 'react';
+import React from 'react'
+import {useEffect} from 'react';
 
 import Header from './Header.js';
 import Swiper from './Swiper.js';
@@ -27,7 +28,7 @@ function App() {
       <Swiper />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/productPage" element={<ProductPage/>} />
+        <Route path="/productPage/:id" element={<ProductPage/>} />
         <Route path="/checkout" element={<Checkout/>} />
         <Route path='/ProfilePage' element={<ProfilePage/>} />
       </Routes>
