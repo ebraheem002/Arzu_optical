@@ -1,21 +1,21 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import ValidApi from './CartContext';
-import CartProvider from './CartContext'
 import ArzuLogo from './ArzuLogo';
 import { Link } from 'react-router-dom';
 import CartContext from './CartContext';
 function Header() {
     const {checkItem} = useContext(CartContext)
+    const [qq, setQq] = useState("")
     console.log(checkItem);
+
     return (
         <div className='header'>
             <Link to='/'><ArzuLogo red='Arzu ' black='optical' /></Link>
            
             <div className='searchbar'>
-                <input type='text' className='search_box' />
+                <input onChange={(e) =>setQq(e.target.value)} type='text' className='search_box' />
                 <SearchIcon className="header_searchIcon" />
             </div>
             <div className='userSide'>

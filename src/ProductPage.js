@@ -10,7 +10,6 @@ function ProductPage(){
     var strIdToNum =  JSON.parse(id)
     const [loading,setLoading] = useState(true)
     const [quaqn,seqtQuan] = useState([]);
-   
           
       useEffect(() =>{
        
