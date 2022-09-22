@@ -7,6 +7,7 @@ import Home from './Home.js';
 import ProductPage from './ProductPage';
 import Checkout from './Checkout';
 import ProfilePage from './ProfilePage';
+import Searched from './Searched.js';
 import { CartProvider } from './CartContext';
 import './App.css';
 import './Header.css';
@@ -14,6 +15,7 @@ import './Swiper.css';
 import './ProductPage.css'
 import './Checkout.css'
 import './ProfilePage.css'
+import './SearchBar.css'
 
 import { BrowserRouter , Routes,Route } from 'react-router-dom';
 
@@ -31,6 +33,8 @@ function App() {
         <Route path="/productPage/:id" element={<ProductPage/>} />
         <Route path="/checkout" element={<Checkout/>} />
         <Route path='/ProfilePage' element={<ProfilePage/>} />
+        <Route path='/Searched/:search' element={<Searched/>} />
+
       </Routes>
       </BrowserRouter>
       </CartProvider>
