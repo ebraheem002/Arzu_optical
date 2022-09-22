@@ -1,13 +1,13 @@
 import React from 'react'
 import {useEffect} from 'react';
 
-import Header from './Header.js';
-import Swiper from './Swiper.js';
-import Home from './Home.js';
-import ProductPage from './ProductPage';
-import Checkout from './Checkout';
-import ProfilePage from './ProfilePage';
-import Searched from './Searched.js';
+import Header from './components/Header.js';
+import Swiper from './components/Swiper.js';
+import Home from './components/Home.js';
+import ProductPage from './components/ProductPage';
+import Checkout from './components/Checkout';
+import ProfilePage from './components/ProfilePage';
+import Searched from './components/Searched.js';
 import { CartProvider } from './CartContext';
 import './App.css';
 import './Header.css';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useContext} from 'react';
-import ArzuLogo from './ArzuLogo';
-import CartContext from './CartContext';
+import ArzuLogo from '../ArzuLogo';
+import CartContext from '../CartContext';
 
 function Checkout (){
     const {checkItem} = useContext(CartContext);

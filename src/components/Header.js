@@ -2,9 +2,9 @@ import React, { useContext, useState } from 'react';
 import PersonIcon from '@mui/icons-material/Person';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchBar from './SearchBar'
-import ArzuLogo from './ArzuLogo';
+import ArzuLogo from '../ArzuLogo';
 import { Link } from 'react-router-dom';
-import CartContext from './CartContext';
+import CartContext from '../CartContext';
 function Header() {
     const {checkItem} = useContext(CartContext)
     console.log(checkItem);

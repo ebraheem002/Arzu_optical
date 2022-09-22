@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import  {collection,onSnapshot, where, query }  from 'firebase/firestore';
-import db from './firebase.js';
+import db from '../firebase.js';
 import { useParams } from "react-router-dom";
-import CartContext from "./CartContext";
+import CartContext from "../CartContext";
 function ProductPage(){
     const { addToCart } = useContext(CartContext);
     const { addqQuantity } = useContext(CartContext);

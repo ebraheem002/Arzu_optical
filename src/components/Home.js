@@ -1,10 +1,10 @@
 import React from 'react'
 import { useEffect, useState} from 'react';
 import Product from './Product.js';
-import { ValidApi } from './CartContext.js';
-import { isLoading } from './CartContext.js';
+import { ValidApi } from '../CartContext.js';
+import { isLoading } from '../CartContext.js';
 
-import './Home.css';
+import '../Home.css';
 
 function Home (){
         const {productsData} = ValidApi();

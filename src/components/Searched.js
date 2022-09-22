@@ -1,6 +1,6 @@
 import React,{useState,useEffect, useContext} from 'react'
 import {useParams} from 'react-router-dom'
-import { ValidApi } from './CartContext.js';
+import { ValidApi } from '../CartContext.js';
 
 
 function Searched() {
