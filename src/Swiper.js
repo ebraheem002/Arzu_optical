@@ -1,4 +1,5 @@
 import React from 'react';
+import CartContext from './CartContext'
 import './Swiper.css'
 function Swiper() {
     return (

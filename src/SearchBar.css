@@ -1,0 +1,19 @@
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    flex: 1;
+
+}
+
+.search_box{
+
+
+    width: 75%;
+}
+
+.searchButton{
+
+    width: 20%;
+   
+}
